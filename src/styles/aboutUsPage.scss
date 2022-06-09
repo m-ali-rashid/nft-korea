@@ -1,0 +1,94 @@
+.about-us {
+  display: flex;
+  padding-top: 160px;
+  font-family: "NotoSans";
+  padding: 0 24px;
+
+  @media #{$tablet} {
+    flex-direction: column;
+  }
+}
+.about-us-description {
+  flex: 1;
+  padding-right: 30px;
+  margin: 43px 0;
+  @media #{$tablet} {
+    padding: 0;
+  }
+}
+.about-us-heading {
+  font-family: "SongMyung";
+  font-size: 73px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 73px;
+  @media #{$tablet} {
+    font-size: clamp(7vw, 40px, 20vw);
+  }
+}
+.about-us-desc {
+  font-size: 22px;
+  margin: 30px 0;
+}
+.bbr-info {
+  margin-left: 40px;
+  .bbr-heading {
+    font-family: "SongMyung";
+    font-size: 42px;
+  }
+  .bbr-btn {
+    padding: 0 30px;
+    width: fit-content;
+    background-color: black;
+    color: white;
+  }
+}
+.about-us-image {
+  height: 1090px;
+  @media #{$desktop} {
+    flex: 1;
+  }
+  @media #{$tablet} {
+    margin: 24px auto 15px;
+    width: 70vw;
+  }
+  @media #{$largePhone} {
+    margin: 24px auto 15px;
+    width: 90vw;
+  }
+  @media #{$phone} {
+    margin: 24px auto 15px;
+    width: 90vw;
+    height: 700px;
+  }
+}
+.nft-container {
+  flex-direction: row;
+  margin-top: 24px;
+
+  @media #{$smallTablet} {
+    flex-direction: column;
+  }
+  .about-us-nft-img {
+    height: 650px;
+    flex: 1;
+    margin-bottom: 130px;
+
+    @media #{$smallTablet} {
+      flex: auto;
+      margin: 24px auto 24px;
+      height: 300px;
+      width: 300px;
+    }
+  }
+  .about-us-nft-desc {
+    margin-left: 27px;
+    flex: 1;
+  }
+}
+.about-us-btn {
+  height: 60px;
+  width: fit-content;
+  background-color: black;
+  color: white;
+}

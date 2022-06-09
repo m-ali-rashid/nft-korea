@@ -1,0 +1,25 @@
+@import "styles/normalize";
+@import "styles/fonts";
+
+// $tablet: "(max-width: 927px)";
+$phone: "(max-width: 600px)";
+$largePhone: "(max-width: 700px)";
+$smallTablet: "(max-width: 850px)";
+$tablet: "(max-width: 1020px)";
+$desktop: "(min-width: 1020px)";
+$maxDesktop: "(max-width: 1420px)";
+$maxWidth: 1400px;
+
+@import "styles/components";
+@import "styles/navigation";
+@import "styles/mainDisplay";
+@import "styles/gallery";
+@import "styles/connectWalletModal";
+@import "styles/artPage";
+@import "styles/participate";
+@import "styles/artistPage";
+@import "styles/modifyCollectorProfile";
+@import "styles/myAuctions";
+@import "styles/cardLarge";
+@import "styles/aboutUsPage";
+@import "styles/footer";

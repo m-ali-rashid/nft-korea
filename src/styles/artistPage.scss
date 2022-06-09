@@ -1,0 +1,171 @@
+.artist-container-cover-photo {
+  margin-top: -95px;
+  height: 280px;
+}
+.artist-container {
+  padding: 0 24px;
+  //   border: 1px solid red;
+  // margin-top: -70px;
+  .cover-photo {
+    height: 285px;
+  }
+  .profile-photo {
+    height: 170px;
+    width: 170px;
+    border-radius: 85px;
+    margin-top: -124px;
+    margin-left: 0;
+    // margin-left: 240px;
+    border: 7px solid white;
+    @media (max-width: 1000px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .main-container {
+    display: flex;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+    .sidebar {
+      flex: 2;
+      //   border: 1px solid blue;
+      font-family: "NotoSans";
+      padding: 38px 28px 0px 0px;
+      transform: translateX(0px);
+      transition: transform 1s;
+
+      @media (max-width: 1000px) {
+        padding-bottom: 0;
+      }
+
+      .wallet-address {
+        display: flex;
+        align-items: center;
+        // margin: 1rem;
+        background-color: white;
+        border-radius: 30px;
+        width: fit-content;
+        padding-right: 1rem;
+
+        @media (max-width: 1000px) {
+          margin: 0 auto;
+        }
+        .title {
+          border-radius: 30px;
+          font-size: 15px;
+          color: white;
+          background-color: black;
+          padding: 0.5rem;
+        }
+        .address {
+          font-family: "SongMyung";
+          font-size: 20px;
+          margin-left: 1rem;
+        }
+      }
+      .artist-info {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 1000px) {
+          align-items: center;
+        }
+        // padding: 1.5rem;
+        .artist-name {
+          font-family: "NotoSans";
+          font-weight: 500;
+          font-size: 42px;
+          margin: 32px 0 19px 0;
+
+          @media (max-width: 1000px) {
+            font-size: 36px;
+            margin-top: 1rem;
+            // margin-bottom: 0.3rem;
+          }
+        }
+        .artist-type {
+          margin-left: 0;
+          margin-bottom: 55px;
+          font-size: 36px;
+
+          @media (max-width: 1000px) {
+            margin-bottom: 0;
+          }
+        }
+        .sidebar-title {
+          font-family: "NotoSans";
+          font-size: 20px;
+          font-weight: 600;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #e6e6e6;
+          margin-bottom: 20px;
+
+          @media (max-width: 1000px) {
+            display: none;
+          }
+        }
+        .artist-desc {
+          font-family: "NotoSans";
+          font-weight: 400;
+          color: #666;
+          font-size: 15px;
+          margin-bottom: 52px;
+          text-align: justify;
+          line-height: 24px;
+
+          @media (max-width: 1000px) {
+            display: none;
+          }
+        }
+        .boxed {
+          margin: 0;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          font-family: "NotoSans";
+          font-size: 15px;
+          font-weight: 500;
+          img {
+            margin-right: 10px;
+          }
+
+          @media (max-width: 1000px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .hide-sidebar {
+      transform: translateX(-400px);
+    }
+    .inner-container {
+      flex: 4;
+      //   border: 1px solid green;
+      padding: 3rem 1.5rem 1.5rem 0;
+
+      @media (max-width: 1000px) {
+        padding: 2rem;
+      }
+      h3 {
+        font-size: 22px;
+        font-family: "NotoSans";
+        font-weight: 400;
+      }
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+
+        .artistPage-card {
+          width: 270px;
+          margin: 0;
+
+          //   @media #{$tablet} {
+          //     width: 40%;
+          //   }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,366 @@
+.artPage {
+  padding: 48px 24px;
+  .image {
+    width: 450px;
+    height: 550px;
+    margin: 0 auto;
+  }
+
+  .artPage-title {
+    font-family: "SongMyung";
+    font-size: 60px;
+    font-weight: 800;
+    margin: 11px 0;
+  }
+  .artPage-subTitle {
+    border-bottom: 1px solid #e6e6e6;
+    font-family: "NotoSans";
+    font-size: 22px;
+    font-weight: 600;
+    padding: 30px 0;
+    margin: 20px 0;
+  }
+  .artPage-body {
+    margin: 12px 0;
+    color: #666;
+  }
+
+  // .artist-type {
+  //   font-family: "SongMyung";
+  //   font-weight: 400;
+  //   font-size: 24px;
+  //   background: linear-gradient(to right, #a570fe 0%, #ef6ac9 100%);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  // }
+
+  .artist-container {
+    display: flex;
+    align-items: center;
+    // margin: 2rem 0;
+    // .artist {
+    //   padding: 11px;
+    //   padding-right: 20px;
+    //   margin-right: 20px;
+    //   width: fit-content;
+    //   border: 1px solid #e5e5e5;
+    //   border-radius: 30px;
+    //   display: flex;
+    //   align-items: center;
+    //   box-shadow: 0px 10px 20px rgb(0 0 0 / 10%);
+    //   .avatar {
+    //     background-color: #a570fe;
+    //     width: 2rem;
+    //     height: 2rem;
+    //     border-radius: 1rem;
+    //     margin-right: 1rem;
+    //   }
+    //   h2 {
+    //     font-family: "NotoSans";
+    //     font-size: 15px;
+    //     font-weight: 500;
+    //   }
+    // }
+  }
+  .share-container {
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .share-button,
+    .msg-button {
+      margin: 2rem 0;
+      margin-left: 1rem;
+      width: fit-content;
+      height: fit-content;
+      border: 1px solid #e5e5e5;
+      background-color: white;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      font-family: "NotoSans";
+      font-size: 15px;
+      p {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: black;
+      }
+    }
+    .share-button {
+      cursor: pointer;
+    }
+    .msg-button {
+      background-color: black;
+      color: white;
+      padding: 0.5rem 1rem;
+    }
+    .msg-button-hidden {
+      // width: 0;
+      // height: 0;
+      // padding: 0;
+      // border: none;
+      // overflow: hidden;
+      display: none;
+    }
+  }
+
+  .sub-container {
+    display: flex;
+    @media #{$tablet} {
+      flex-direction: column;
+    }
+
+    .left-container {
+      // flex: 5;
+      flex: 7;
+      font-family: "NotoSans";
+      padding-right: 90px;
+
+      .tabs-container {
+        padding: 40px 0;
+        //   border: 1px solid seagreen;
+        .tab {
+          // border: 1px solid #f1f1f1;
+          // background-color: white;
+          display: flex;
+          align-items: center;
+          // padding: 1rem;
+          max-width: 400px;
+          // border-radius: 10px;
+          margin: 1rem 0;
+          .tab-icon {
+            width: 20px;
+          }
+          .tab-title {
+            margin-left: 1rem;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+
+    .right-container {
+      // flex: 4;
+      flex: 5;
+      // padding-left: 2rem;
+
+      @media #{$tablet} {
+        padding-left: 0rem;
+      }
+      .boxed {
+        padding: 33px;
+        border: 1px solid #f2f2f2;
+        // margin-bottom: 52px;
+      }
+      .bidding-info {
+        display: flex;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #f2f2f2;
+        @media (max-width: 600px) {
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .bid {
+          padding: 5px 0;
+          flex: 1;
+          border-right: 2px solid #e6e6e6;
+          padding-right: 2rem;
+        }
+        .bid-ending {
+          padding: 5px 0 5px 55px;
+          flex: 2;
+          // padding-left: 2rem;
+          @media (max-width: 600px) {
+            padding-left: 0;
+          }
+          .remaining-time {
+            display: flex;
+            div {
+              margin-right: 2rem;
+            }
+          }
+        }
+        .subtitle {
+          font-family: "NotoSans";
+          font-weight: 500;
+          // margin-bottom: 1rem;
+        }
+        .numbers,
+        .number {
+          font-family: "SongMyung";
+          font-weight: 500;
+          font-size: 36px;
+          margin: 20px 0;
+        }
+        .numbersDesc {
+          font-family: "NotoSans";
+          font-weight: 500;
+          margin-bottom: 1rem;
+          font-size: 1rem;
+          color: #8a8a8a;
+        }
+      }
+      .bid-buttons {
+        //   display: flex;
+        margin-top: 32px;
+        .button {
+          // margin-right: 2rem;
+          padding: 22px 3rem;
+          height: auto;
+          text-decoration: none;
+          width: "100%";
+          // flex: 1;
+        }
+      }
+      .purchase {
+        display: flex;
+        //   margin: 1rem 0;
+        @media #{$tablet} {
+          flex-direction: column;
+        }
+        .left-contain {
+          width: 60%;
+          padding-right: 46px;
+          .title {
+            font-family: "NotoSans";
+            font-size: 15px;
+            font-weight: 400;
+          }
+          .price {
+            font-family: "SongMyung";
+            font-size: 36px;
+            font-weight: 500;
+            display: flex;
+            .number {
+              margin-right: 1rem;
+              // display: flex;
+              .price-converted {
+                font-family: "NotoSans";
+                font-size: 15px;
+                font-weight: 400;
+                color: #666;
+              }
+            }
+            .unit {
+              position: relative;
+              cursor: pointer;
+              .unit-dropdown {
+                display: none;
+                color: white;
+                background-color: black;
+                padding: 0.5rem;
+                right: 0px;
+                bottom: 45px;
+                li {
+                  list-style: none;
+                }
+                position: absolute;
+              }
+              &:hover {
+                .unit-dropdown {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .right-contain {
+          // flex: 9;
+          width: 40%;
+          padding: 1rem 0;
+          .button {
+            margin: 0;
+            width: 100%;
+          }
+        }
+      }
+
+      h3 {
+        font-family: "NotoSans";
+        font-size: 22px;
+        font-weight: 400;
+        margin: 1rem 0;
+      }
+
+      .bidders {
+        display: flex;
+        align-items: center;
+        padding: 23px;
+
+        .bidder-avatar {
+          width: 36px;
+          height: 36px;
+          background-color: violet;
+          border-radius: 17px;
+        }
+        .bidder-details {
+          flex: 1;
+          padding: 0 1rem;
+          font-family: "NotoSans";
+          font-size: 15px;
+          color: #666;
+          .bidder-info {
+            margin-bottom: 2px;
+            span {
+              font-family: "SongMyung";
+              font-size: 20px;
+              color: black;
+            }
+          }
+          .bidder-date {
+            font-weight: 500;
+          }
+        }
+        .bidder-bid {
+          font-family: "SongMyung";
+          font-weight: 400;
+          font-size: 20px;
+          margin-right: 26px;
+          .bidder-bid-crypto {
+            text-align: right;
+          }
+          .bidder-bid-convert {
+            text-align: right;
+            font-family: "NotoSans";
+            font-size: 15px;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+
+  .artist-info {
+    font-family: "NotoSans";
+    font-size: 36px;
+    font-weight: 500;
+    .artist-info-subcontainer {
+      margin: 45px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      @media #{$tablet} {
+        flex-direction: column;
+      }
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+      }
+      .artist-description {
+        font-size: 22px;
+        font-weight: 400;
+        max-width: 950px;
+        margin-left: auto;
+        font-weight: 400;
+      }
+    }
+  }
+}

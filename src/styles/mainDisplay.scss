@@ -1,0 +1,141 @@
+.mainDisplay {
+  //   border: 1px solid red;
+  // margin: 2rem auto 1rem auto;
+  max-width: 1150px;
+  display: flex;
+  padding: 130px 1.5rem;
+  @media #{$desktop} {
+    // margin-top: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media #{$smallTablet} {
+    flex-direction: column;
+  }
+  @media #{$tablet} {
+    padding: 50px 0;
+  }
+  .main-work-container {
+    overflow: hidden;
+    width: 450px;
+    @media #{$desktop} {
+    }
+    @media #{$tablet} {
+    }
+    @media #{$smallTablet} {
+      height: 400px;
+      width: 100%;
+    }
+    .main-work {
+      transition: all 0.3s;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      .main-work {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .work-info {
+    // width: 100%;
+    // padding: 85px 0 85px 32px;
+    padding: 84px 0 84px 20px;
+    @media #{$desktop} {
+      width: 540px;
+    }
+    @media #{$tablet} {
+      padding: 0px 20px;
+      flex: 1;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      @media #{$tablet} {
+        margin-top: 1rem;
+      }
+    }
+    .title {
+      margin: 33px 0;
+      font-family: "SongMyung";
+      font-size: 60px;
+      @media #{$tablet} {
+        margin: 20px 0;
+      }
+    }
+    .bidding-info {
+      //   border: 1px solid rgb(100, 151, 100);
+      display: flex;
+      margin: 19px 0 32px 0;
+      //   justify-content: space-between;
+      @media (max-width: 600px) {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .bid {
+        flex: 1;
+        border-right: 2px solid #e6e6e6;
+        @media #{$tablet} {
+          border: none;
+        }
+      }
+      .bid-ending {
+        flex: 2;
+        padding-left: 2rem;
+        @media (max-width: 600px) {
+          padding-left: 0;
+        }
+        .remaining-time {
+          display: flex;
+          div {
+            margin-right: 27px;
+          }
+        }
+      }
+      .subtitle {
+        font-family: "NotoSans";
+        font-weight: 500;
+        // margin-bottom: 1rem;
+      }
+      .numbers,
+      .number {
+        font-family: "SongMyung";
+        font-weight: 500;
+        font-size: 36px;
+        margin: 20px 0 17px 0;
+      }
+      .numbersDesc {
+        font-family: "NotoSans";
+        font-weight: 500;
+        // margin-bottom: 1rem;
+        font-size: 1rem;
+        color: #8a8a8a;
+      }
+    }
+    .bid-buttons {
+      display: flex;
+      .button {
+        margin-right: 2rem;
+        padding: 0 3rem;
+        text-decoration: none;
+        width: 285px;
+        @media #{$tablet} {
+          // flex: 1;
+          width: 210px;
+        }
+        @media #{$phone} {
+          flex: 1;
+          height: auto;
+          padding: 1rem;
+        }
+      }
+      .btn-bid {
+        @media #{$tablet} {
+          flex: 1;
+          // width: 210px;
+        }
+      }
+    }
+  }
+}

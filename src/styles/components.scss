@@ -1,0 +1,267 @@
+.page-container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  // padding: 0 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.artist-badge {
+  // padding: 10px;
+  // padding-right: 35px;
+  // margin-right: 23px;
+  width: fit-content;
+  // border: 1px solid #e5e5e5;
+  // border-radius: 30px;
+  display: flex;
+  align-items: center;
+  // box-shadow: 0px 10px 20px rgb(0 0 0 / 10%);
+  .avatar {
+    background-color: #a570fe;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: 1rem;
+  }
+  .artist-title {
+    font-family: "NotoSans";
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.artist-type,
+.berry-gradient {
+  font-family: "SongMyung";
+  font-weight: 400;
+  background: linear-gradient(to right, #a570fe 0%, #ef6ac9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 23px;
+  font-size: 24px;
+}
+.orange-gradient {
+  background: linear-gradient(to right, #fe6d8a 0%, #efd169 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.blue-gradient {
+  background: linear-gradient(to right, #70d7fe 0%, #8a68ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  border: 1px solid black;
+  height: 50px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 1rem;
+  transition: 1s all;
+  cursor: pointer;
+  font-family: "NotoSans";
+  font-weight: 500;
+  color: black;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 5%);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  .cover-img {
+    height: 190px;
+    transition: all 0.3s;
+    overflow: hidden;
+    @media (max-width: 1270px) {
+      height: 200px;
+    }
+    .work-image {
+      max-width: 100%;
+      // max-height: 100%;
+    }
+  }
+  .img-container-container {
+    overflow: hidden;
+    height: 300px;
+
+    .img-container {
+      transition: all 0.3s;
+      // height: 300px;
+      height: 100%;
+      overflow: hidden;
+      @media (max-width: 1270px) {
+        height: 300px;
+      }
+      .work-image {
+        max-width: 100%;
+      }
+    }
+    &:hover {
+      .img-container {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .work-info {
+    // padding: 1rem;
+    padding: 25px 22px;
+    border-bottom: 1px solid #f2f2f2;
+    .title {
+      font-family: "NotoSans";
+      font-weight: 400;
+      font-size: 22px;
+      margin-bottom: 19px;
+    }
+    .artist {
+      display: flex;
+      align-items: center;
+      .profileImg {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: darkslateblue;
+        margin-right: 1rem;
+      }
+      h3 {
+        font-family: "NotoSans";
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  }
+  .bidding-info {
+    background-color: black;
+    color: white;
+    padding: 22px 25px;
+    display: flex;
+    justify-content: space-between;
+    .subtitle {
+      font-family: "NotoSans";
+      font-size: 15px;
+      // line-height: 23px;
+      margin-bottom: 8px;
+    }
+    .numbers {
+      text-transform: uppercase;
+      // line-height: 5px;
+    }
+    .numbers,
+    .remaining-time {
+      font-family: "SongMyung";
+      font-size: 20px;
+      font-weight: 300;
+      span {
+        font-family: "NotoSans";
+        font-size: 15px;
+      }
+    }
+  }
+  .profile-img-container {
+    @media #{$desktop} {
+      height: 88px;
+      width: 88px;
+      margin: -44px 0 0 22px;
+      border-radius: 44px;
+    }
+    @media #{$tablet} {
+      height: 7rem;
+      width: 7rem;
+      margin: -44px 0 0 22px;
+      border-radius: 3.5rem;
+    }
+    border: 8px solid white;
+    overflow: hidden;
+    .profile-img {
+      transition: all 0.3s;
+      background-color: darkslateblue;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      .profile-img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .artist-info {
+    padding: 30px 28px 33px;
+    .artist-name {
+      font-family: "NotoSans";
+      font-weight: 500;
+      font-size: 22px;
+    }
+    .artist-type {
+      font-family: "SongMyung";
+      font-weight: 400;
+      font-size: 24px;
+      background: linear-gradient(to right, #a570fe 0%, #ef6ac9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0.5rem 0 1rem 0;
+    }
+    .artist-desc {
+      font-family: "NotoSans";
+      font-weight: 500;
+      font-size: 13px;
+      color: #666;
+    }
+  }
+  .additional-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 25px 22px;
+    .num-works {
+      .num {
+        font-size: 26px;
+        font-family: "SongMyung";
+        font-weight: 500;
+      }
+      .numtxt {
+        font-size: 15px;
+        font-family: "NotoSans";
+        font-weight: 500;
+        color: #666;
+      }
+    }
+    .button {
+      border: 1px solid #e5e5e5;
+    }
+  }
+}
+
+.boxed {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.checkboxed {
+  margin-top: 2rem;
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    .cb-description {
+      padding: 0.5rem;
+      font-family: "NotoSans";
+      color: #666;
+      .cb-title {
+        color: black;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}

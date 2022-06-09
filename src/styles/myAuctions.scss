@@ -1,0 +1,42 @@
+.my-auctions,
+.privacy-policy {
+  font-family: "NotoSans";
+  margin-top: 90px;
+  padding: 0 24px;
+
+  .title {
+    padding: 22px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .privacy-policy-container,
+  .my-auctions-container {
+    padding: 24px 0px;
+    // border: 1px solid red;
+
+    .privacy-policy-desc {
+      font-size: 15px;
+      color: #666;
+    }
+    .no-auctions {
+      margin: 175px auto;
+      text-align: center;
+      .no-auctions-title {
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .no-auctions-desc {
+        font-size: 15px;
+        color: #666;
+        font-weight: 500;
+      }
+      .no-auctions-btn {
+        margin: 35px auto 0 auto;
+        height: 60px;
+        width: max-content;
+        padding: 0 50px;
+      }
+    }
+  }
+}

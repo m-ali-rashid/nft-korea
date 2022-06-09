@@ -1,0 +1,86 @@
+/*
+thin        100
+light       200
+demilight   300
+regular     400
+medium      500
+bold        700
+black       800
+*/
+// FantasqueSansMono Regular
+@font-face {
+  font-family: "FantasqueSansMono";
+  font-weight: 400;
+  src: local("FantasqueSansMono"),
+    url(../assets/fonts/FantasqueSans.otf) format("opentype");
+}
+// NotoSans Thin
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 100;
+  src: local("NotoSans"),
+    url(../assets/fonts/NotoSansCJKkr-Thin.otf) format("opentype");
+}
+// NotoSans Light
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 200;
+  src: local("NotoSans"),
+    url(../assets/fonts/NotoSansCJKkr-Light.otf) format("opentype");
+}
+// NotoSans DemiLight
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 300;
+  src: local("NotoSans"),
+    url(../assets/fonts/NotoSansCJKkr-DemiLight.otf) format("opentype");
+}
+// NotoSans Regular
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 400;
+  src: local("NotoSans"),
+    url(../assets/fonts/NotoSansCJKkr-Regular.otf) format("opentype");
+}
+// NotoSans Medium
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 500;
+  src: local("NotoSans"),
+    url(../assets/fonts/NotoSansCJKkr-Medium.otf) format("opentype");
+}
+// NotoSans Bold
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 700;
+  src: local("NotoSans"),
+    url(../assets/fonts/NotoSansCJKkr-Bold.otf) format("opentype");
+}
+// NotoSans Black
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 800;
+  src: local("NotoSans"),
+    url(../assets/fonts/NotoSansCJKkr-Black.otf) format("opentype");
+}
+// NotoSans Mono Regular
+@font-face {
+  font-family: "NotoSansMono";
+  font-weight: 400;
+  src: local("NotoSansMono"),
+    url(../assets/fonts/NotoSansMonoCJKkr-Regular.otf) format("opentype");
+}
+// NotoSans Mono Bold
+@font-face {
+  font-family: "NotoSansMono";
+  font-weight: 700;
+  src: local("NotoSansMono"),
+    url(../assets/fonts/NotoSansMonoCJKkr-Bold.otf) format("opentype");
+}
+// SongMyung Regular
+@font-face {
+  font-family: "SongMyung";
+  font-weight: 400;
+  src: local("SongMyung"),
+    url(../assets/fonts/SongMyung-Regular.ttf) format("truetype");
+}

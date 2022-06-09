@@ -1,0 +1,31 @@
+.gallery {
+  padding: 0px 24px 110px;
+  .heading {
+    font-family: "NotoSans";
+    font-weight: 500;
+    font-size: 22px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .card-container {
+    // border: 1px solid red;
+    padding: 25px 0;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+
+    @media #{$tablet} {
+      grid-template-columns: auto auto auto;
+    }
+    @media #{$smallTablet} {
+      grid-template-columns: auto auto;
+    }
+    @media #{$largePhone} {
+      grid-template-columns: auto;
+    }
+  }
+}
